@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Gallery | CSS</title>
+</head>
+<style>
+    body{
+        background-color: #222;
+    }
+    img{
+        border: 20px solid white ;
+        margin-right: -221px;
+        margin-left: -221px;
+
+        /* ------NEW----- */
+        transform: rotate(0deg);
+        /* ------NEW----- */
+    }
+   #gallery{
+    margin-top: 400px;
+    text-align: center;
+    /* border: 5px solid; */
+   }
+   .i-1{
+    transform: rotate(40deg);
+    border-color: #999999;
+   }
+   .i-2{
+    transform: rotate(20deg);
+    border-color: 	 #b3b3b3;
+   }
+   .i-3{
+    transform: rotate(0deg);
+    border-color:	 #cccccc;
+   }
+   .i-4{
+    transform: rotate(-20deg);
+    border-color: #e6e6e6 ;
+   }
+   .i-5{
+    transform: rotate(-40deg);
+   }
+</style>
+<body>
+    <p id="gallery">
+        <img class="i-1" src="https://fastly.picsum.photos/id/959/400/600.jpg?hmac=Xo-bvBMVHOSUYzcJMxaJdDlG8266lBliBP_7gCkET8A" alt="">
+        <img class="i-2" src="https://fastly.picsum.photos/id/566/400/600.jpg?hmac=ZR2ZcZIQdRyEe6-23PhZAhhijgIRTvU_0TNBd9pDoEo" alt="">
+        <img class="i-3" src="https://fastly.picsum.photos/id/1072/400/600.jpg?hmac=-v-dfM2RzyVbA9uiSXKeECIoi1Ps6YLLNgkfULQ5vOA" alt="">
+        <img class="i-4" src="https://fastly.picsum.photos/id/46/400/600.jpg?hmac=Kp5lOKItUEgfRKklRkTncj3AikaDTRkIzG3Bd5Hyy2s" alt="">
+        <img class="i-5" src="https://fastly.picsum.photos/id/1011/400/600.jpg?hmac=U4zEOpBx5aeXo3eC_HObjWR2BKUvy-jlkz4zxYulojE" alt="">
+    </p>
+
+    <!-- 
+        HW1:
+        reverse the rotation
+     -->
+</body>
+</html>
