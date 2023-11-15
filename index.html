@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Steps | Global Css</title>
+</head>
+<style>
+    body{
+        background-color: #233;
+    }
+    .container{
+        /* border: 3px solid white; */
+   
+    }
+    .steps{
+        /* background-color: yellow; */
+        transform: rotate(-90deg);
+       
+    }
+    /* descendant selector */
+    .steps div{
+        width: 10px;
+        height: 50px;
+        background-color: orange;
+        /* margin: 5px; */
+        border: 1px solid black;   
+    }
+    .steps div:nth-child(2){
+        margin-left: 50px;
+        /*
+          HW1:transform: translate: ???;; 
+         */
+
+    }
+    .steps div:nth-child(3){
+        margin-left: 100px;
+
+    }
+    .steps div:nth-child(4){
+        margin-left: 150px;
+        
+    }
+    .steps div:nth-child(5){
+        margin-left: 200px;
+        
+    }
+    .ball{
+        width: 50px;
+        height: 50px;
+        background: darkred;
+        border-radius: 100%;
+        margin-left: 700px;
+        margin-top: 220px;
+        
+        animation: fall 3s steps(5,end) 10;
+      
+    }
+    @keyframes fall{
+        from {
+            margin-left: 700px;
+            transform: translateX(0px);
+            
+        }
+        to{
+            margin-left: 440px;
+            transform: translateY(250px);
+           
+        }
+
+    }
+</style>
+<body>
+    <div class="container">
+
+        <div class="steps">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="ball"></div>
+    <!-- 
+        HW2: change the ball animation
+        done?
+     -->
+
+    </div>
+</body>
+</html>
