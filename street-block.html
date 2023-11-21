@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Street Block | CSS</title>
+</head>
+<style>
+    body{
+        background-color: #223;
+        color: white;
+    }
+    .street{
+        border: 1px dotted red;
+
+    }
+    .house{
+        /* border: 1px dotted green; */
+        width: 150px;
+        display: inline-block;
+        margin-right: 30px;
+    }
+    .house-roof{
+        width: 0px;
+        height: 0px;
+        /* background-color:red; */
+        /* triangle */
+        border: 75px solid brown;
+        border-top-width: 0px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-width: 90px;
+    }
+    .chimney{
+    border-right: 5px solid black;
+    height: 5px;
+    padding: 10px;
+    margin-left: -4px;
+
+    }
+    .chimney2{
+    border-right: 5px solid black;
+    height: 25px;
+    padding: 10px;
+    margin-left: 15px;
+    margin-top: -25px;
+
+    }
+    .chimney3{
+    border-right: 5px dashed gray;
+    height: 25px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: -80px;
+
+    }
+
+    .house-wall{
+        background-color: antiquewhite;
+        height: 150px;
+        width: 150px;
+    }
+    .house-window{
+        border: 5px solid brown;
+        height: 50px;
+        width: 50px;
+        transform: translate(45px,45px);
+    }
+ .window_s1{
+    border-right: 5px solid brown;
+    height: 25px;
+    width: 20px;
+    
+ }
+ .window_s2{
+    border-top: 5px solid brown;
+    width: inherit;
+    
+ }
+ .window_s3{
+    border-left: 5px solid brown;
+    height: 22px;
+    width: 15px;
+    margin-left: 25px;
+   
+ }
+
+    .building-tall{
+        background-color: bisque;
+        height: 300px;
+        width: 100px;
+        display: inline-block;
+      
+    }
+    .balkon{
+     border: 5px solid white;
+     height: 45px;
+     width: 50px;
+     margin-left: 20px;
+     margin-top: 10px;
+     border-top-color: transparent;
+}
+    .window{
+        border: 5px solid black;
+        height: 25px;
+        width: 25px;
+        transform: translate(8px,1px);
+
+    }
+    .window_split{
+        border-top: 5px solid white;
+        margin-top: 10px;
+    }
+    .window_split2{
+        border-left: 5px solid white;
+        height: 25px;
+        margin-top: -15px;
+        margin-left: 10px;
+    }
+    .door  {
+        border: 5px solid black;
+        border-bottom-color: transparent;
+        height: 30px;
+        width: 25px;
+        margin-left: 33px;
+        margin-top: 5px;
+    }
+    .handle{
+        border: 3px solid black;
+        border-radius: 90%;
+        width: 1px;
+        transform: translate(17px,15px);
+    }
+    .cloud{
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 20px;
+        
+    }
+    .tree{
+        margin-top: 150px;
+    }
+        
+       
+</style>
+<body>
+    <div class="street">
+        <div class="house">
+             <div class="house-roof">
+                <div class="chimney">
+                </div>
+                <div class="chimney2">
+                </div>
+                <div class="chimney3">
+                </div>
+             </div>
+             <div class="house-wall">
+                <div class="house-window">
+                    <div class="window_top">
+                        <div class="window_s1"></div>
+                        <div class="window_s2"></div>
+                    </div>
+               <div class="window_bottom">
+                <div class="window_s3"></div>
+               </div>
+            </div>
+             </div>
+        </div>
+        <div class="building-tall">
+            
+            <div class="balkon">
+                <div class="window">
+                    <div class="window_split"></div>
+                    <div class="window_split2"></div>
+                </div>
+
+            </div>
+            
+            <div class="balkon">
+                <div class="window">
+                    <div class="window_split"></div>
+                    <div class="window_split2"></div>
+                </div>
+
+            </div>
+          
+            <div class="balkon">
+                <div class="window">
+                    <div class="window_split"></div>
+                    <div class="window_split2"></div>
+                </div>
+
+            </div>
+           
+            <div class="balkon">
+                <div class="window">
+                    <div class="window_split"></div>
+                    <div class="window_split2"></div>
+                </div>
+
+            </div>
+            <div class="door">
+                <div class="handle">
+
+                </div>
+            </div>
+        </div>
+        <div class="cloud">
+            <img src="https://icons.iconarchive.com/icons/flaticonmaker/flat-style/64/cloud-icon.png" width="64" height="64">
+        <div class="tree">
+            <img src="https://icons.iconarchive.com/icons/pixelkit/flat-jewels/64/Tree-icon.png" width="64" height="64">
+        </div>
+            
+
+        </div>
+       
+    </div>
+
+</body>
+</html>
