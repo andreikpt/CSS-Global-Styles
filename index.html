@@ -2,89 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Steps | Global Css</title>
+    <title>GALLERY 3D</title>
 </head>
 <style>
     body{
         background-color: #233;
-    }
-    .container{
-        /* border: 3px solid white; */
-   
-    }
-    .steps{
-        /* background-color: yellow; */
-        transform: rotate(-90deg);
-       
-    }
-    /* descendant selector */
-    .steps div{
-        width: 10px;
-        height: 50px;
-        background-color: orange;
-        /* margin: 5px; */
-        border: 1px solid black;   
-    }
-    .steps div:nth-child(2){
-        margin-left: 50px;
-        /*
-          HW1:transform: translate: ???;; 
-         */
 
+        perspective: 1000px;
     }
-    .steps div:nth-child(3){
-        margin-left: 100px;
+    #gallery{
+        width: 500px;
+        height: 700px;
+        border: 5px solid white;
+        margin: 100px;
 
+        transform: rotateX(45deg);
     }
-    .steps div:nth-child(4){
-        margin-left: 150px;
+    #gallery div:nth-child(1){
+        border: 2px solid red;
+        height: 200px;
+        width: 200px;
+         background-image: url(https://cdn-blob.austria.info/cms-uploads-prod/default/0002/80/thumb_179066_default_gallery_big.jpeg);
+         /* background-size: 100px 100px;
+         background-repeat: no-repeat; */
+         background-position: center;
+         display: inline-block;
+    }
+    #gallery div:nth-child(2){
+        border: 2px solid red;
+        height: 200px;
+        width: 290px;
+        background-image: url(https://www.mountainliving.com/content/uploads/2020/12/Gordon_Rusticextmtn-1.jpg);
+        display: inline-block;
+        vertical-align: top;
+        background-position:right 50% ;
+    }
+    #gallery div:nth-child(3){
+        border: 2px solid red;
+        height: 300px;
+        width:250px;
+        background-image: url(https://www.mountainliving.com/content/uploads/2020/12/steamboat-snow.jpg);
+        background-position: center;
+        display: inline-block;
+    }
+    #gallery div:nth-child(4){
+        border: 2px solid red;
+        background-image: url(https://www.mountainliving.com/content/uploads/2020/12/bigsky_ext.jpg);
+        height: 300px;
+        width: 240px;
+        display: inline-block;
+        background-position: center;
+
         
     }
-    .steps div:nth-child(5){
-        margin-left: 200px;
-        
+    #gallery div:nth-child(5){
+        border: 2px solid red;
+        background-image: url(https://i.pinimg.com/564x/3b/59/21/3b592132b29dad490acf310fc6a9c8e8.jpg);
+        width: 497px;
+        height: 185px;
+        background-position: center;
     }
-    .ball{
-        width: 50px;
-        height: 50px;
-        background: darkred;
-        border-radius: 100%;
-        margin-left: 700px;
-        margin-top: 220px;
-        
-        animation: fall 3s steps(5,end) 10;
-      
-    }
-    @keyframes fall{
-        from {
-            margin-left: 700px;
-            transform: translateX(0px);
-            
-        }
-        to{
-            margin-left: 440px;
-            transform: translateY(250px);
-           
-        }
 
-    }
 </style>
 <body>
-    <div class="container">
-
-        <div class="steps">
+    <div id="gallery">
+        <div></div>
+        <!-- HW1: finish the rest of the slides 
+                  display:inline-block
+                  float:left/right
+        
+        -->
         <div></div>
         <div></div>
         <div></div>
         <div></div>
-        <div></div>
-    </div>
-    <div class="ball"></div>
-    <!-- 
-        HW2: change the ball animation
-        done?
-     -->
-
     </div>
 </body>
 </html>
