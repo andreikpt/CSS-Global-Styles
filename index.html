@@ -2,80 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GALLERY 3D</title>
+    <title>CSS Pseudo selectors | Directory Tree</title>
+    <style>
+        body{
+            background-color: #333;
+        }
+        .tree{
+            list-style-type: "┝" ;
+            font-size: 64px;
+
+        }
+        .folder {
+            color: white;
+            /* border: 1px solid rebeccapurple; */
+            padding: 24px 0 24px 72px ;
+
+            /* NEW */
+            background-image: url(Gakuseisean-Aire-Documents.64.png);
+            background-repeat: no-repeat;
+            line-height: 8px;
+            transition: 0.5s;
+              
+        
+        }
+        .folder:hover{
+            color: rgb(223, 201, 164);
+            background-color: #2a2323;
+        }
+        .folder:last-child{
+            list-style-type: "┕";
+        }
+        .empty{
+            background-image: url(Gakuseisean-Aire-Folder.64.png);
+        }
+        .name{
+
+            font-size: 18px; 
+        }
+    
+        .file {
+            color: white;
+            /* border: 1px solid rebeccapurple; */
+            padding: 24px 0 24px 72px ;
+
+            /* NEW */
+            background-image: url(Gakuseisean-Aire-Developer.64.png);
+            background-repeat: no-repeat;
+            line-height: 18px;
+            margin-top: 20px;;
+            margin-bottom: -30px;
+            transition: 0.5s;
+        }
+        .file:last-child{
+            list-style-type: "┕";
+        }
+        .file:hover{
+            color: #806767;
+        }
+    </style>
 </head>
-<style>
-    body{
-        background-color: #233;
-
-        perspective: 1000px;
-    }
-    #gallery{
-        width: 500px;
-        height: 700px;
-        border: 5px solid white;
-        margin: 100px;
-
-        transform: rotateX(45deg);
-    }
-    #gallery div:nth-child(1){
-        border: 2px solid red;
-        height: 200px;
-        width: 200px;
-         background-image: url(https://cdn-blob.austria.info/cms-uploads-prod/default/0002/80/thumb_179066_default_gallery_big.jpeg);
-         /* background-size: 100px 100px;
-         background-repeat: no-repeat; */
-         background-position: center;
-         display: inline-block;
-    }
-    #gallery div:nth-child(2){
-        border: 2px solid red;
-        height: 200px;
-        width: 290px;
-        background-image: url(https://www.mountainliving.com/content/uploads/2020/12/Gordon_Rusticextmtn-1.jpg);
-        display: inline-block;
-        vertical-align: top;
-        background-position:right 50% ;
-    }
-    #gallery div:nth-child(3){
-        border: 2px solid red;
-        height: 300px;
-        width:250px;
-        background-image: url(https://www.mountainliving.com/content/uploads/2020/12/steamboat-snow.jpg);
-        background-position: center;
-        display: inline-block;
-    }
-    #gallery div:nth-child(4){
-        border: 2px solid red;
-        background-image: url(https://www.mountainliving.com/content/uploads/2020/12/bigsky_ext.jpg);
-        height: 300px;
-        width: 240px;
-        display: inline-block;
-        background-position: center;
-
-        
-    }
-    #gallery div:nth-child(5){
-        border: 2px solid red;
-        background-image: url(https://i.pinimg.com/564x/3b/59/21/3b592132b29dad490acf310fc6a9c8e8.jpg);
-        width: 497px;
-        height: 185px;
-        background-position: center;
-    }
-
-</style>
 <body>
-    <div id="gallery">
-        <div></div>
-        <!-- HW1: finish the rest of the slides 
-                  display:inline-block
-                  float:left/right
-        
-        -->
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+    <ul class="tree">
+        <li class="folder">
+            <div class="name">Project [DONE]</div>
+            <!-- nested list -->
+            <ul class="tree">
+                <li class="file"><div class="name">File 1</div></li>
+                <li class="file"><div class="name">File 2</div></li>
+            </ul>
+        </li>
+        <li class="folder">
+            <div class="name">Project [NOW]</div>
+        </li>
+        <!-- new - an element can have miltiple classes!!! - override  -->
+        <li class="folder empty">
+            <div class="name">Project [TBD]</div>
+        </li>
+    </ul>
 </body>
 </html>
