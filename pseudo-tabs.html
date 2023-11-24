@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Pseudo Selectors</title>
+    <style>
+        .tabs{
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #bbb;
+        }
+        .tabs-item{
+            border: 1px solid #ccc;
+          display: inline-block;
+          padding: 10px;
+          margin: 5px;
+
+          text-align: center;
+          width: 70px;
+          height: 80px;	
+          vertical-align: top;
+          border-radius: 10px;
+
+
+          /* NEW */
+          transition: 0.5s;
+        }
+        .tabs-item:hover{
+            background-color: #bbb ;
+        }
+        .tabs-link{
+            text-decoration: none;
+            color: #222;
+        }
+        .tabs-options{
+            font-size: 32px;
+            line-height: 5px;
+
+            background-color: #999;
+            height: 32px;
+            width: 32px;
+            border-radius: 32px;
+            transform: translate(50px,-80px);
+            /* NEW */
+            opacity: 0;
+
+        }
+        .tabs-options:hover{
+            opacity: 1.0;
+            transition: 0.5s;
+        }
+        .tabs-font{
+            background-color: #999;
+            border-radius: 32px;
+            width: 50px;
+            margin-left: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <ul class="tabs">
+        <li class="tabs-item">
+            <a class="tabs-link" href="#">
+                <img src="https://icons.iconarchive.com/icons/designbolts/free-cute-shaded-social/48/Github-icon.png" width="48" height="48">
+               <br><br>
+                <div class="tabs-font">username</div>
+            </a>
+            <div class="tabs-options">
+                . <br>
+                . <br>
+                . <br>
+            </div>
+        </li>
+        <li class="tabs-item">
+            <a class="tabs-link" href="#">
+                <img src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Categories-applications-internet-icon.png" width="48" height="48">
+               <br><br>
+               <div class="tabs-font">Wikipedia</div>
+               
+            </a>
+            <div class="tabs-options">
+                . <br>
+                . <br>
+                . <br>
+            </div>
+        </li>
+        <li class="tabs-item">
+            <a class="tabs-link" href="#">
+                <img src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Apps-preferences-system-network-sharing-icon.png" width="48" height="48">
+               <br><br>
+               <div class="tabs-font">Diskpart</div>
+            </a>
+            <div class="tabs-options">
+                . <br>
+                . <br>
+                . <br>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
