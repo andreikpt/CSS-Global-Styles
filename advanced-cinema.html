@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADVANCED CINEMA | CSS SELECTORS</title>
+    <style>
+        body{
+            background-color: #333;
+             color: wheat;
+             font-family: Arial;
+        }
+        h1{
+            text-align: center;
+        }
+        .cinema{
+            border: 1px dotted red;
+            padding: 5px;
+            text-align: center;
+        }
+        .cinema .vip span{
+            background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/64/Orange-Seat-icon.png);
+            width: 64px;
+            height: 64px;
+
+            display: inline-block;
+            vertical-align: top;
+        }
+        .cinema .main span{
+            background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/64/Magenta-Seat-icon.png);
+            width: 64px;
+            height: 64px;
+
+            display: inline-block;
+            vertical-align: top;
+        }
+        .cinema .front span{
+            background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/64/Magenta-Seat-icon.png);
+            width: 64px;
+            height: 64px;
+
+            display: inline-block;
+            vertical-align: top;
+        }
+        .cinema .main .row span:nth-child(5){
+            margin-left: 64px;
+        }
+        .cinema .vip .row span:first-child::after{
+            content: url(https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-2/32/man-icon.png);
+        }
+        .cinema .vip .row span:first-child::before{
+            content: "1";
+            font-size: 18px;
+            margin: 15px;
+        }
+        .cinema .main .row:nth-child(3) span:nth-child(5)::after{
+            content: url(https://icons.iconarchive.com/icons/aha-soft/free-large-boss/32/Caucasian-Female-Boss-icon.png);
+
+        }
+        .cinema .main .row:nth-child(3) span:nth-child(5)::before{
+            content: "5";
+            font-size: 18px;
+            margin: 15px;
+        }
+        .cinema .vip .row span:last-child::after{
+            content: url(https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-2/32/man-icon.png);
+        }
+        .cinema .vip .row span:last-child::before{
+            content: "7";
+            font-size: 18px;
+            margin: 15px;
+        }
+        .cinema .front .row:nth-child(3) span:nth-child(4)::after{
+            content: url(https://icons.iconarchive.com/icons/aha-soft/free-large-boss/32/Caucasian-Female-Boss-icon.png);
+            
+        }
+        .cinema .front .row:nth-child(3) span:nth-child(4)::before{
+            content: "4";
+            font-size: 18px;
+            margin: 15px;
+        }
+    
+      
+    </style>
+</head>
+<body>
+    <h1>ADVANCED CINEMA | CSS SELECTORS</h1>
+
+    <div class="cinema">
+        <div class="vip">
+            <h2>VIP</h2>
+            <div class="row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+        </div>
+        <div class="main">
+            <h2>MAIN</h2>
+            <div class="row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+        </div>
+        <div class="front">
+            <h2>Front</h2>
+            <div class="row"><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="row"><span></span><span></span><span></span><span></span><span></span></div>
+
+        </div>
+    </div>
+
+</body>
+</html>
